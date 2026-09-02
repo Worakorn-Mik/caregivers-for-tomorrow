@@ -21,11 +21,16 @@
 
 ```
 .
-├── docs/          เอกสารโครงงาน — BMC, business proposal, judge feedback, action plan
+├── docs/          เอกสารโครงงานทางการ — BMC, business proposal, judge feedback, project overview, action plan
+├── research/      ค้นคว้า/ข้อมูลดิบ — legal, segments, competitor-analysis, user-research, unit-economics
+├── pitch/         สไลด์ + บทพูด แยกตามรอบ (round2 / round3 / final)
+├── design/        UI/UX mockup, wireframe, brand
 ├── app/           แอปพลิเคชัน (ยังไม่เลือก stack — ดู app/README.md)
 ├── CLAUDE.md      คู่มือ/กติกาการทำงานประจำโปรเจกต์ (อ่านก่อนเริ่ม)
 └── README.md
 ```
+
+แต่ละโฟลเดอร์มี `README.md` อธิบายว่าใส่อะไร และผูกกับ action plan ข้อไหน
 
 ## เริ่มงาน (สำหรับสมาชิกทีม)
 
