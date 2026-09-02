@@ -1,0 +1,64 @@
+# --- Secrets / env ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+serviceAccount*.json
+google-services.json
+GoogleService-Info.plist
+
+# --- Node / JS ---
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.turbo/
+.cache/
+
+# --- React Native / Expo ---
+.expo/
+.expo-shared/
+*.jks
+*.keystore
+!debug.keystore
+
+# --- Flutter / Dart (in case the team picks Flutter) ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+**/ios/Pods/
+**/android/.gradle/
+
+# --- Python (backend) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Misc ---
+tmp/
+temp/
+*.local
