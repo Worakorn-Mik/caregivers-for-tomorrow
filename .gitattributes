@@ -1,0 +1,13 @@
+# Normalize line endings so Windows/Mac teammates don't get noisy diffs
+* text=auto eol=lf
+
+# Binary — never touch
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.xlsx  binary
+*.pptx  binary
+*.docx  binary
+*.keystore binary
