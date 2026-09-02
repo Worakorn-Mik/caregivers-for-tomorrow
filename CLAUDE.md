@@ -41,10 +41,19 @@
 
 > ตัวเลข/ข้อมูลอ้างอิงทุกตัว re-derive จากไฟล์ใน `docs/` เสมอ ไม่ใช้จากความจำ
 
-## 4. Tech stack
+## 4. Tech stack — เลือกแล้ว
 
-**ยังไม่เลือก** — ทีมตัดสินใจร่วมกันแล้วมาเติมที่นี่ + `app/README.md`
-ข้อพิจารณา: ต้องขึ้น Play Store (proposal ข้อ 10), มี frontend + backend, งบ cloud server จำกัด
+| Layer | เลือก |
+|---|---|
+| Mobile | Expo SDK 57 + React Native + expo-router + TypeScript |
+| UI | design system เองใน `app/src/theme/tokens.ts` + `app/src/components/` (Noto Sans Thai) |
+| Backend (แผน) | Supabase — Postgres + Auth + RLS (`supabase/migrations/0001_init.sql`) |
+| Build → Play Store | EAS Build (cloud, ไม่ต้องมี Mac / Android Studio) |
+
+- MVP ปัจจุบัน**รันได้โดยไม่ต้องมี backend** — ใช้ mock data ใน `app/src/data/`
+- Supabase ยังไม่ต่อ ต่อทีหลังผ่าน `app/src/lib/supabase.ts` (ดู `supabase/README.md`)
+- ยังไม่ทำ: payment จริง, background-check API, maps SDK, persistence (ตั้งใจตัด scope)
+- รันแอป: `cd app && npm install && npm start`
 
 ## 5. Ownership (กันแก้ชนกัน)
 

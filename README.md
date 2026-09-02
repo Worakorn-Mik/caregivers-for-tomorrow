@@ -25,12 +25,24 @@
 ├── research/      ค้นคว้า/ข้อมูลดิบ — legal, segments, competitor-analysis, user-research, unit-economics
 ├── pitch/         สไลด์ + บทพูด แยกตามรอบ (round2 / round3 / final)
 ├── design/        UI/UX mockup, wireframe, brand
-├── app/           แอปพลิเคชัน (ยังไม่เลือก stack — ดู app/README.md)
+├── app/           แอป Expo (React Native + TypeScript) — MVP รันได้ด้วย mock data
+├── supabase/      schema backend (Postgres + RLS) — ยังไม่ต่อกับแอป
 ├── CLAUDE.md      คู่มือ/กติกาการทำงานประจำโปรเจกต์ (อ่านก่อนเริ่ม)
 └── README.md
 ```
 
-แต่ละโฟลเดอร์มี `README.md` อธิบายว่าใส่อะไร และผูกกับ action plan ข้อไหน
+แต่ละโฟลเดอร์มี `README.md` อธิบายว่าใส่อะไร
+
+## รันแอป (MVP)
+
+```bash
+cd app
+npm install
+npm start
+```
+
+กด `a` เปิด Android emulator หรือสแกน QR ด้วยแอป **Expo Go** บนมือถือ (Wi-Fi เดียวกัน)
+รายละเอียดใน [app/README.md](app/README.md)
 
 ## เริ่มงาน (สำหรับสมาชิกทีม)
 
